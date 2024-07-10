@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 id="title">Student Enrollment Form</h1>
+            <form>
+                <label>Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label>Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label>Course:</label> 
+                <br>
+                <input type="radio" id="python" name="course" value="Python">
+                <label for="python">Python</label>
+                <input type="radio" id="java" name="course" value="Java">
+                <label for="java">Java</label>
+                <input type="radio" id="c" name="course" value="C">
+                <label for="c">C</label>
+                
+                <button type="submit" onclick="addStudent()">Submit</button>
+            </form>
+        </div>
+        
+        <div class="card-container">
+            <div id="demo-data"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
